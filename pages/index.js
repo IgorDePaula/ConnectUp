@@ -1,6 +1,6 @@
 import User from "../components/User";
 import Message from "../components/Message";
-
+import Image from 'next/image'
 export default function Home() {
     return <div>
         <div className={'w-full h-64 bg-green-500 shadow'}></div>
@@ -19,7 +19,7 @@ export default function Home() {
                 <div className={'col-span-3 border-l border-gray-500'}>
                     <div className={`w-full h-full flex shadow `}>
                         <div className={'w-1/12  flex items-center justify-center'}>
-                            <img src="https://source.unsplash.com/random" alt="" className={'w-16 h-16 rounded-full'}/>
+                            <Image src="https://source.unsplash.com/random" alt="" className={'w-16 h-16 rounded-full'}/>
                         </div>
                         <div className={'w-11/12  flex flex-col justify-center '}>
                             <p className={'font-bold'}>user</p>

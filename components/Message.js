@@ -1,3 +1,4 @@
+import Image from 'next/image'
 export default function Message({me}){
     return me ? <div className={'w-full flex flex-row'}>
         <div className={'w-1/12'}></div>
@@ -14,12 +15,12 @@ export default function Message({me}){
             <p className={'text-xs text-gray-500 align-top font-bold w-full flex justify-end'}>14:08</p>
         </div>
         <div className={'w-1/12 flex justify-center'}>
-            <img src="https://source.unsplash.com/random" alt="" className={'w-10 h-10 rounded-full'}/>
+            <Image src="https://source.unsplash.com/random" alt="" className={'w-10 h-10 rounded-full'}/>
         </div>
     </div> :
         <div className={'w-full flex flex-row'}>
             <div className={'w-1/12 flex justify-center'}>
-                <img src="https://source.unsplash.com/random" alt="" className={'w-10 h-10 rounded-full'}/>
+                <Image src="https://source.unsplash.com/random" alt="" className={'w-10 h-10 rounded-full'}/>
             </div>
             <div className={'w-11/12  flex flex-col items-stretch'}>
                 <p className={''}>Donec sollicitudin vulputate aliquet. Nulla quis tempor odio. Ut nec
